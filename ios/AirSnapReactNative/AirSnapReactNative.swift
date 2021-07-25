@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AirSnap
+// import AirSnap
 
 @objc(AirSnapReactNative)
 class AirSnapReactNative: NSObject {
@@ -18,6 +18,7 @@ class AirSnapReactNative: NSObject {
     
     @objc(start)
     func start() -> Void {
-        AirSnap.start()
+        // AirSnap.start()
+        print("Starting airsnap")
     }
 }
