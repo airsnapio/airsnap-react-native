@@ -9,8 +9,7 @@
 
 @interface RCT_EXTERN_MODULE(AirSnapReactNative, NSObject)
 
-RCT_EXTERN_METHOD(start:(NSDictionary)configuration
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(start)
 
 @end
+

@@ -16,9 +16,8 @@ class AirSnapReactNative: NSObject {
         return false
     }
     
-    @objc(start:withResolver:withRejecter:)
-    func start(configuration: NSDictionary, resolve:RCTPromiseResolveBlock, reject:RCTPromiseRejectBlock) -> Void {
+    @objc(start)
+    func start() -> Void {
         AirSnap.start()
-        resolve(nil)
     }
 }
