@@ -17,7 +17,7 @@ class AirSnapReactNative: NSObject {
     }
     
     @objc(start)
-    func start() -> Void {
-        AirSnap.start()
+    func start(withAppKey: String) -> Void {
+        AirSnap.start(withAppKey: String)
     }
 }
