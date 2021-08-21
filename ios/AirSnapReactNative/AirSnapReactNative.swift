@@ -18,6 +18,6 @@ class AirSnapReactNative: NSObject {
     
     @objc(start:)
     func start(_ withAppKey: String) -> Void {
-        AirSnap.start(withAppKey: String)
+        AirSnap.start(withAppKey: withAppKey)
     }
 }
