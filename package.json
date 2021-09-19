@@ -1,5 +1,5 @@
 {
-  "name": "airsnap-react-native",
+  "name": "@airsnap/react-native",
   "version": "0.0.1",
   "description": "AirSnap library for React Native",
   "main": "src/index.js",
