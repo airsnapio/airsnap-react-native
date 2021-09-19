@@ -20,4 +20,9 @@ class AirSnapReactNative: NSObject {
     func start(_ withAppKey: String) -> Void {
         AirSnap.start(withAppKey: withAppKey)
     }
+
+    @objc(setUser:)
+    func setUser(_ identifier: String) -> Void {
+        AirSnap.setUser(identifier: identifier)
+    }
 }

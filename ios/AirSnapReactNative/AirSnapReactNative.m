@@ -11,5 +11,7 @@
 
 RCT_EXTERN_METHOD(start:(NSString *)withAppKey)
 
+RCT_EXTERN_METHOD(setUser:(NSString *)identifier)
+
 @end
 
