@@ -138,7 +138,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.dependency "React-Core"
+  spec.dependency "React"
   spec.dependency "AirSnap", "~> 0.0.2"
 
 end
