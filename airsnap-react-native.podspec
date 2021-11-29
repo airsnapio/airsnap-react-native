@@ -134,11 +134,11 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   # spec.requires_arc = true
-  # spec.static_framework = true
+  spec.static_framework = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   spec.dependency "React"
-  spec.dependency "AirSnap", "~> 0.0.3"
+  spec.dependency "AirSnap", "~> 0.0.4"
 
 end
