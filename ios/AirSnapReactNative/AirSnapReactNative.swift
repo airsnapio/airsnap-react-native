@@ -16,7 +16,7 @@ class AirSnapReactNative: NSObject {
         return false
     }
     
-    @objc func start(_ withAppKey: String, _ privacyRule: String) -> Void {
+    @objc func start(_ withAppKey: String, privacyRule: String) -> Void {
         AirSnap.start(withAppKey: withAppKey, privacyRule: privacyRule == "unmasked" ? .unmasked : .masked)
     }
 
