@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AirSnapKit
+import AirSnap
 
 @objc(AirSnapReactNative)
 class AirSnapReactNative: NSObject {
