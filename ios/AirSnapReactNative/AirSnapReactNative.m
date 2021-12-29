@@ -9,7 +9,7 @@
 
 @interface RCT_EXTERN_MODULE(AirSnapReactNative, NSObject)
 
-RCT_EXTERN_METHOD(start:(NSString *)withAppKey)
+RCT_EXTERN_METHOD(start:(NSString *)withAppKey privacyRule:(NSString *)privacyRule)
 
 RCT_EXTERN_METHOD(setUser:(NSString *)identifier)
 
