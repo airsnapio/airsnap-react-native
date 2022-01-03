@@ -22,3 +22,11 @@ import AirSnap from '@airsnap/react-native';
 
 AirSnap.start("<api-key>")
 ```
+
+### Privacy Mask
+
+AirSnap prioritizes privacy and therefore enables privacy masking by default. You can disable the privacy mask by passing the following parameter to `AirSnap.start`
+
+```
+AirSnap.start("<api-key>", "unmask") // "mask" or "unmask"
+```
