@@ -10,14 +10,30 @@ export function start(key, privacyRule = "mask") {
   }
 }
 
-export function setUser(id) {
+export async function getSessionId() {
+  if (Platform.OS === "ios") {
+    const sessionId = await NativeModules.AirSnapReactNative.getSessionId();
+    return sessionId;
+  }
+}
+
+export async function getUserId() {
+  if (Platform.OS === "ios") {
+    const userId = await NativeModules.AirSnapReactNative.getUserId();
+    return userId;
+  }
+}
+
+export function setUserId(id) {
   // We only support iOS at the moment
   if (Platform.OS === "ios") {
-    NativeModules.AirSnapReactNative.setUser(id);
+    NativeModules.AirSnapReactNative.setUserId(id);
   }
 }
 
 export default {
   start,
-  setUser,
+  getSessionId,
+  getUserId,
+  setUserId,
 };
