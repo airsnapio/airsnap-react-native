@@ -1,4 +1,7 @@
-import { NativeModules, Platform } from "react-native";
+import {
+  NativeModules,
+  Platform,
+} from 'react-native';
 
 export function start(key, privacyRule = "mask") {
   // We only support iOS at the moment
@@ -7,10 +10,10 @@ export function start(key, privacyRule = "mask") {
   }
 }
 
-export function setUser(key) {
+export function setUser(id) {
   // We only support iOS at the moment
   if (Platform.OS === "ios") {
-    NativeModules.AirSnapReactNative.setUser(key);
+    NativeModules.AirSnapReactNative.setUser(id);
   }
 }
 

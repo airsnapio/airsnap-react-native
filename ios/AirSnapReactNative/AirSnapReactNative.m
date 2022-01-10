@@ -11,7 +11,7 @@
 
 RCT_EXTERN_METHOD(start:(NSString *)withAppKey privacyRule:(NSString *)privacyRule)
 
-RCT_EXTERN_METHOD(setUser:(NSString *)identifier)
+RCT_EXTERN_METHOD(setUser:(NSString *)id)
 
 @end
 

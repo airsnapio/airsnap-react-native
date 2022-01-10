@@ -21,7 +21,7 @@ class AirSnapReactNative: NSObject {
     }
 
     @objc(setUser:)
-    func setUser(_ identifier: String) -> Void {
-        AirSnap.setUser(identifier: identifier)
+    func setUser(_ id: String?) -> Void {
+        AirSnap.setUser(id: id)
     }
 }
