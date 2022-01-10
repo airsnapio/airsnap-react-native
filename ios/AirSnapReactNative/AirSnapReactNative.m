@@ -12,11 +12,11 @@
 
 RCT_EXTERN_METHOD(start:(NSString *)withAppKey privacyRule:(NSString *)privacyRule)
 
-RCT_EXTERN_METHOD(getSessionId:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+RCT_EXPORT_METHOD(getSessionId:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     resolve([AirSnap sessionId]);
 }
 
-RCT_EXTERN_METHOD(getUserId:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+RCT_EXPORT_METHOD(getUserId:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     resolve([AirSnap userId]);
 }
 
