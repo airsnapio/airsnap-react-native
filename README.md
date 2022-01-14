@@ -14,6 +14,12 @@ To install with Yarn:
 yarn add @airsnap/react-native
 ```
 
+Install the Pod library:
+
+```
+pod install
+```
+
 ### Initialize the library
 
 ```
