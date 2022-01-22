@@ -22,5 +22,10 @@ RCT_EXPORT_METHOD(getUserId:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromise
 
 RCT_EXTERN_METHOD(setUserId:(NSString *)id)
 
+RCT_EXTERN_METHOD(captureException
+                  :(NSDictionary *)exception
+                  level:(NSString *)level
+                  context:(NSDictionary *)context)
+
 @end
 

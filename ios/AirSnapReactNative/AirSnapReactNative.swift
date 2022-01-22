@@ -23,6 +23,12 @@ class AirSnapReactNative: NSObject {
     @objc func setUserId(_ id: String?) -> Void {
         AirSnap.setUser(id: id)
     }
+    
+    @objc public func captureException(_ issue: [String: NSObject], level: String, context: [String: NSObject]) {
+      let issueInput = IssueInput(platform: issue["platform"] as! String , summary: issue["summary"] as! String, data: issue["data"] as! [String: NSObject]?)
+
+      AirSnap.captureException(issue: issueInput, level: level, context: context)
+    }
 
 
 }
