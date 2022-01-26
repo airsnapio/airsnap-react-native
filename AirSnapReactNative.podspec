@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "airsnap-react-native"
+  spec.name         = "AirSnapReactNative"
   spec.version      = package["version"]
   spec.summary      = package["description"]
 
