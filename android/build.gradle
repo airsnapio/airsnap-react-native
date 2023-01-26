@@ -1,0 +1,63 @@
+buildscript {
+    if (project == rootProject) {
+        repositories {
+            google()
+            mavenCentral()
+            jcenter()
+        }
+
+        dependencies {
+            classpath 'com.android.tools.build:gradle:3.5.3'
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+def safeExtGet(prop, fallback) {
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+android {
+    compileSdkVersion safeExtGet('ReactNative_compileSdkVersion', 29)
+    defaultConfig {
+        minSdkVersion safeExtGet('ReactNative_minSdkVersion', 16)
+        targetSdkVersion safeExtGet('ReactNative_targetSdkVersion', 29)
+        versionCode 1
+        versionName "0.0.1"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    lintOptions {
+        disable 'GradleCompatible'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url("$rootDir/../node_modules/react-native/android")
+    }
+    maven {
+        url 'https://jitpack.io'
+    }
+    google()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    //noinspection GradleDynamicVersion
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    implementation("com.github.airsnapio:airsnap-android:0.0.1@aar") { transitive = true }
+}
