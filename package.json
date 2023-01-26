@@ -21,7 +21,7 @@
     "!**/__mocks__"
   ],
   "scripts": {
-    "prepare": "bob build",
+    "prepack": "bob build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
