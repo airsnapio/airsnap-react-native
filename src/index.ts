@@ -9,6 +9,10 @@ export function start(key: string, privacyRule: 'mask' | 'unmask' = 'mask') {
     NativeModules.AirSnapReactNative.start(key, privacyRule);
   }
 
+  if (Platform.OS === 'android') {
+    NativeModules.AirSnapReactNative.start({ key, privacyRule });
+  }
+
   interceptGlobalErrorHandler();
 }
 
