@@ -12,13 +12,18 @@
     "android",
     "ios",
     "cpp",
-    "AirSnapReactNative.podspec",
+    "*.podspec",
     "!lib/typescript/example",
-    "!android/build",
     "!ios/build",
+    "!android/build",
+    "!android/gradle",
+    "!android/gradlew",
+    "!android/gradlew.bat",
+    "!android/local.properties",
     "!**/__tests__",
     "!**/__fixtures__",
-    "!**/__mocks__"
+    "!**/__mocks__",
+    "!**/.*"
   ],
   "scripts": {
     "prepack": "bob build",
@@ -27,9 +32,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/react-native": "^0.66.15",
-    "react": "16.13.1",
-    "react-native": "0.63.2",
+    "@types/react-native": "^0.71.0",
+    "react": "^18.2.0",
+    "react-native": "^0.71.1",
     "react-native-builder-bob": "^0.20.3",
     "typescript": "^4.5.5"
   },
